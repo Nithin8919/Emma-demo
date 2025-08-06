@@ -12,7 +12,7 @@ services:
   langgraph-postgres:
     image: postgres:16
     ports:
-      - "5433:5432"
+      - "5434:5432"
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: postgres
@@ -31,7 +31,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8123:8000"
+      - "8124:8000"
     volumes:
       - type: bind
         source: ./src
